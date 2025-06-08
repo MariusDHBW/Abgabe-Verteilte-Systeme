@@ -1,0 +1,21 @@
+<div class="fixed"> 
+        <img src="images/cookie.jpeg" alt="Cookiebuton" width="40" height="40" onclick="openCookieBanner()" style="cursor: pointer;"></img>
+</div>
+
+<div id="cookie-banner">
+    <p>Hier gibt's Kekse!
+    <br>Komm, nimm dir einen!
+    <br>Knusprig, lecker und frisch!
+    <br>So wie sie sein sollen!
+    <br>Also greif zu!!</p>
+    <button id="cookie-button" 
+            onclick="cookieButtonAccepted()" 
+            onmouseenter="cookieButtonMouseEntered()" 
+            onmouseleave="cookieButtonMouseLeft()">
+            Nein ich will keine Cookies
+    </button>
+    <button id="cookie-deny-button"
+            onclick="cookieButtonDenied()">
+            Nein bitte keine Cookies
+    </button>
+</div>

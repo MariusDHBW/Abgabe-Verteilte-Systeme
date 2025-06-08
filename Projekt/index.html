@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <title>YouTube Downloader</title>
+        <meta name="description"
+            content="Website mit schönem Interface zum Herunterladen von YouTube Videos!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="icons/favicon.ico"/>
+    </head>
+
+    <body>
+        <div id="header-placeholder"></div>
+        <div id="modal-placeholder"></div>
+        
+        
+        <main>
+            <div class="container">
+                <div class="sidebar">   
+                </div>
+
+                <div class="main">
+                    <h1 class="page-title-content"> Downloader</h1>
+                    <div class="page-content-glassy">
+                        <form id="downloadForm" onsubmit="handleDownload(event)">
+                            <p>Wählen Sie die Download-Optionen:</p>
+                            <p>Weitere Optionen wie Formatauswahl werden in Zukunft hinzugefügt</p>
+
+                            <!-- YouTube-Link -->
+                            <label for="url">YouTube-Link:</label><br>
+                            <input type="link" id="url" name="url" placeholder="https://www.youtube.com/watch?v=example" required>
+                            
+                            <br>
+                            <input type="submit" value="Download starten">
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="sidebar">   
+                </div>
+            </div>
+        </main>
+        
+        <div id="cookies"></div>
+        <div id="footer-placeholder"></div>
+
+        <script src="scripts/auth.js" defer></script>
+        <script src="javascript.js" defer></script>
+        <script src="scripts/download.js" defer></script>
+        <script src="scripts/background.js" defer></script>
+        <script src="scripts/cookies.js" defer></script>
+    </body>
+</html>

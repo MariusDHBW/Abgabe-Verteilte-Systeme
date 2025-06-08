@@ -1,0 +1,28 @@
+services:
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: youtube
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  pma:
+    image: phpmyadmin
+    container_name: youtube-pma
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: admin
+      PMA_PASSWORD: admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - mariadb    
+
+volumes:
+  mariadb_data:

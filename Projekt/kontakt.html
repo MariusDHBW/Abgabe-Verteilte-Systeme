@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <title>Kontakt</title>
+        <meta name="description"
+            content="Das vorgeschriebene Kontaktformular zur Erfüllung der Mindestanforderungen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="icons/favicon.ico"/>
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <div id="modal-placeholder"></div>
+        
+        <main>
+            <div class="container">
+                <div class="sidebar">   
+                </div>
+
+                <div class="main">
+                    <h1 class="page-title-content">Kontakt</h1>
+                    <div class="page-content-glassy">
+                        <form id="kontaktForm" method="post" action="https://webhook.site/036cc91d-02de-4673-a3c3-953828ea5312">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Dr. Sebastian Günther" required>
+                                <label for="email">E-Mail:</label>
+                                <input type="email" id="email" name="email" placeholder="sebastian@guenther.dev" required>
+                                <label for="betreff">Betreff:</label>
+                                <input type="text" id="betreff" name="betreff" placeholder="Verteilte Systeme Benotung" required>
+                                <label for="nachricht">Nachricht:</label>
+                                <textarea id="nachricht" name="nachricht" rows="6" placeholder="Sehr geehrte Gruppe, herzlichen Glückwunsch zur 1,0. Es freut mich sehr, dass ihr dieses Formular noch hinzugefügt habt. yada yada yada. Mit freundlichen Grüßen, Dr. Sebastian Günther"
+                                required></textarea>
+                                <button type="submit">Absenden</button>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="sidebar">   
+                </div>
+            </div>
+        </main>
+        
+        <div id="cookies"></div>
+        <div id="footer-placeholder"></div>
+
+        <script src="scripts/auth.js"></script>
+        <script src="javascript.js"></script>
+        <script src="scripts/background.js"></script>
+        <script src="scripts/cookies.js"></script>
+    </body>
+</html>

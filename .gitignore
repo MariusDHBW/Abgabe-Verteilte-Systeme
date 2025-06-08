@@ -1,0 +1,12 @@
+**/venv
+**/__pycache__/
+**/videos
+**/*.env
+**/*.ruff_cache
+**/*node_modules
+.idea
+cookies.txt
+biome.json
+package-lock.json
+package.json
+requirements_dev.txt
